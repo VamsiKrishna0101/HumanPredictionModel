@@ -7,7 +7,7 @@ from app.utils.images import read_image_bytes_to_bgr
 
 router = APIRouter()
 log = get_logger(__name__)
-pose = PoseEstimator("yolov8m-pose.pt")
+pose = PoseEstimator("yolov8n-pose-tiny.pt")
 
 @router.get("/health")
 def health():
